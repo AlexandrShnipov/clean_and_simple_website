@@ -60,8 +60,8 @@
                             periculis vis ei, quas tibique pro at, eos ut decore ...
                         </p>
                         <div class='blog__slaider-buttons d-flex'>
-                            <button class='blog__slaider-button-add'>Read now</button>
-                            <button class='blog__slaider-button-addition'>Add to your bookmarks</button>
+                            <button class='blog__slaider-button-add btn'>Read now</button>
+                            <button class='blog__slaider-button-addition btn'>Add to your bookmarks</button>
                             <!-- <a class='blog__slaider-link-add' href="#">Read now</a>
                             <a class='blog__slaider-link-addition' href="#">Add to your bookmarks</a> -->
                         </div>
@@ -75,14 +75,14 @@
     <section class="testimonials__wrapper">
         <div class='container testimonials'>
             <div class="row d-flex flex-nowrap justify-content-between">
-                <div class="col-6 testimonials__description">
+                <div class="col-5 testimonials__description">
                     <h4 class="testimonials__title title">testimonials</h4>
                     <span class='testimonials__title-slogan title-slogan'>Customers's quotes</span>
                     <p class='testimonials__text'>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu
                         atqui
                         laudem an.</p>
                 </div>
-                <div class="col-12 testimonials__slaider d-flex justify-content-start">
+                <div class="col-12 offset-2 testimonials__slaider d-flex justify-content-start">
                     <div class="testimonials__slaider-content d-flex flex-column  align-items-start">
                         <p class='testimonials__slaider-text'>Quidam vocibus eum ne, erat consectetuer voluptatibus ut
                             nam.
@@ -219,18 +219,22 @@
 
 
     <!-- ! get-started-->
+
     <section class="get-started__wrapper">
         <div class='container get-started'>
             <div class="row d-flex justify-content-center">
                 <div class="col-8 get-started__content d-flex flex-column text-center">
                     <h4 class='get-started__title title'>PLAN YOUR LIFE</h4>
-                    <h5 class="get-started__subtitle">Get <span class='get-started__subtitle--bold'>started</span> now</h5>
+                    <h5 class="get-started__subtitle">Get <span class='get-started__subtitle--bold'>started</span> now
+                    </h5>
                     <p class="get-started__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu
                         atqui
                         laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.</p>
                     <div class="get-started__links d-flex justify-content-center">
-                        <a class='get-started__link--price get-started__link d-flex justify-content-center align-items-center text-center' href="#">View pricing</a>
-                        <a class="get-started__link--documentation get-started__link d-flex justify-content-center align-items-center text-center" href="#">Read documentation</a>
+                        <a class='get-started__link--price get-started__link d-flex justify-content-center align-items-center text-center'
+                            href="#">View pricing</a>
+                        <a class="get-started__link--documentation get-started__link d-flex justify-content-center align-items-center text-center"
+                            href="#">Read documentation</a>
                     </div>
                 </div>
             </div>
@@ -241,13 +245,13 @@
 
     <section class='newsletter__wrapper'>
         <div class='container newsletter'>
-            <div class="row newsletter__content d-flex justify-content-center align-items-center">
-                <div class="col-5  newsletter__content-description">
-                    <h3 class='newsletter__title'>Sign up for newsletter</h3>
-                    <p class='newsletter__text'>Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero
-                        alterum.</p>
-                </div>
-                <div class-7>
+            <div class="row newsletter__content d-flex">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <div class='newsletter__content-description'>
+                        <h3 class='newsletter__title'>Sign up for newsletter</h3>
+                        <p class='newsletter__text'>Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero
+                            alterum.</p>
+                    </div>
                     <form class="newsletter__form" action="#" method="post">
                         <input class="newsletter__input" type="email" name="email" required placeholder="Email address">
                         <button class='newsletter__button btn' type="submit">
@@ -264,52 +268,54 @@
 
         </div>
     </section>
+    
     <!-- !footer -->
 
-    <div class='container footer'>
-        <div class="row">
-            <div class="col-9">
-                <nav class="footer__menu">
-                    <ul class="footer__menu-list d-flex">
-                        <li class="footer__menu-item">
-                            <a href="#" class="fuuter__menu-link">Home</a>
+    <div class='container-fluid footer'>
+        <div class="row menu__wrapper d-flex justify-content-between align-items-center flex-nowrap">
+            <div class="col-8 d-flex p-0">
+                <img class='circle' src="./img/footer/circle.svg" alt="circle">
+                <nav class="menu">
+                    <ul class="menu-list d-flex p-0 align-items-center m-0">
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Home</a>
                         </li>
-                        <li class="footer__menu-item">
-                            <a href="#" class="fuuter__menu-link">Blog</a>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Blog</a>
                         </li>
-                        <li class="footer__menu-item">
-                            <a href="#" class="fuuter__menu-link">Features</a>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Features</a>
                         </li>
-                        <li class="footer__menu-item">
-                            <a href="#" class="fuuter__menu-link">Pricing</a>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Pricing</a>
                         </li>
-                        <li class="footer__menu-item">
-                            <a href="#" class="fuuter__menu-link">Documentation</a>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Documentation</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-            <div class="col-2  footer__social-list">
-                <a href="#" class="footer__social-link">
+            <div class="col-3 d-flex justify-content-end p-0 social-list">
+                <a href="#" class="social-link">
                     <img src="./img/social/facebook.svg" alt="facebook_icon">
                 </a>
-                <a href="#" class="footer__social-link">
+                <a href="#" class="social-link">
                     <img src="./img/social/telegram.svg" alt="telegram_icon">
                 </a>
-                <a href="#" class="footer__social-link">
+                <a href="#" class="social-link">
                     <img src="./img/social/twitter.svg" alt="twitter_icon">
                 </a>
-                <a href="#" class="footer__social-link">
+                <a href="#" class="social-link">
                     <img src="./img/social/medium.svg" alt="medium_icon">
                 </a>
             </div>
-            <div class='col-1'>
-                <button class='footer__button'>Get started</button>
+            <div class='col-1 p-0'>
+                <button class='button--started btn'>Get started</button>
             </div>
-            <div class='col-12'>
-                <span class='footer__copiright'>Copyright © 2018 by Random site
-                </span>
-            </div>
+        </div>
+        <div class='col-12 d-flex justify-content-start'>
+            <span class='footer__copiright'>Copyright © 2018 by Random site
+            </span>
         </div>
     </div>
 
