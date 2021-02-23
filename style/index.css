@@ -409,8 +409,7 @@ button {
 }
 
 .get-started__wrapper {
-    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
-    background-image: url('../img/get-started/rigth/blue_big.svg'), url('../img/get-started/rigth/blue_small.svg'),
+       background-image: url('../img/get-started/rigth/blue_big.svg'), url('../img/get-started/rigth/blue_small.svg'),
         url('../img/get-started/rigth/big.svg'),
         url('../img/get-started/rigth/small.svg'),
         url('../img/get-started/left/bottom/blue_small.svg'),
