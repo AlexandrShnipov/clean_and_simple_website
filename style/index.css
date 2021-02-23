@@ -262,12 +262,12 @@ button {
 
 .testimonials__slaider-content {
     position: relative;
-    max-width: 425px;
+    width: 425px;
+    margin: 0;
+    padding: 0;
     margin-top: 113px;
     margin-bottom: 190px;
-    margin-right: 21px;
-    /* margin-left: 110px; */
-    padding: 41px 70px 30px 70px;
+          padding: 41px 60px 30px 60px;
     background: #FFFFFF;
     border: 1px solid #D8E3FE;
     box-shadow: 0px 5px 50px #F3F5FA;
