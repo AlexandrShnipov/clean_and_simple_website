@@ -8,7 +8,7 @@ body {
     padding: 0;
 }
 
-a{
+a {
     transition: all .5s;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
@@ -19,13 +19,12 @@ a{
 a:hover {
     text-decoration: none;
     color: #fff;
-    background-color: #800000;
 }
 
 a:active {
     text-decoration: none;
-    background-color: #000080;
-     }
+
+}
 
 ul {
     list-style: none;
@@ -74,12 +73,14 @@ button {
 }
 
 .statistics__progress {
+    padding-left: 0;
     padding-right: 90px;
     color: #FFFFFF;
     background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
 }
 
 .statistics__users {
+    padding-right: 0;
     padding-left: 90px;
     color: #5E80FF;
     background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
@@ -111,12 +112,18 @@ button {
 .blog__wrapper {
     background: #F5F8FF;
     padding-top: 104px;
-    padding-bottom: 213px;
 }
 
 .blog__title-slogan {
     margin-bottom: 92px;
 }
+
+.blog__slaider-wrapper {
+    padding-left: 135px;
+    padding-right: 135px;
+    margin-bottom: 100px;
+}
+
 
 .blog__slaider-title {
     font-size: 36px;
@@ -132,6 +139,26 @@ button {
     box-shadow: 0px 15px 50px #EFF4FF;
     padding-top: 63px;
     padding-bottom: 64px;
+}
+
+.blog__slaider-images {
+    margin-right: 67px;
+}
+
+.slaider__images-left {
+    position: relative;
+    margin-right: 13px;
+}
+
+
+.slaider__images-link {
+    position: absolute;
+    top: 38%;
+    left: 38%;
+}
+
+.slaider-images-right--top {
+    margin-bottom: 13px;
 }
 
 .blog__slaider-text {
@@ -173,6 +200,30 @@ button {
     font-size: 13px;
     line-height: 16px;
     color: #A6B6DA;
+}
+
+.carousel-inner {
+    margin-bottom: 104px;
+}
+
+.carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    background-color: #D1D6E3;
+    margin-bottom: 0;
+}
+
+.carousel-indicators li:active {
+    background-color: #5283FF
+}
+
+.carousel-indicators li:not(:last-child) {
+    margin-right: 12px;
 }
 
 /* ! testimonials */
@@ -243,7 +294,7 @@ button {
     -o-transition: all 1s linear;
 }
 
-.testimonials__slaider-foto:hover{
+.testimonials__slaider-foto:hover {
     cursor: pointer;
     transform: scale(1.5);
     -webkit-transform: scale(1.5);
@@ -353,14 +404,36 @@ button {
 
 /* !get-started */
 
+.main__get-started {
+    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+}
+
 .get-started__wrapper {
     background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+    background-image: url('../img/get-started/rigth/blue_big.svg'), url('../img/get-started/rigth/blue_small.svg'),
+        url('../img/get-started/rigth/big.svg'),
+        url('../img/get-started/rigth/small.svg'),
+        url('../img/get-started/left/bottom/blue_small.svg'),
+        url('../img/get-started/left/bottom/blue_big.svg'),
+        url('../img/get-started/left/top/blue.svg'),
+        url('../img/get-started/left/top/big.svg'),
+        url('../img/get-started/left/top/small.svg');
+    background-position: bottom 109px right 354px,
+        bottom 109px right 93px,
+        bottom 64px right 107px,
+        bottom 180px right 247px,
+        bottom 91px left 107px,
+        bottom 51px left 158px,
+        top 152px left 50px,
+        top 95px left 117px,
+        top 77px left 59px;
+    background-repeat: no-repeat;
     padding-top: 91px;
     padding-bottom: 91px;
     position: relative;
 }
 
-.get-started__wrapper::before {
+/* .get-started__wrapper::before {
     content: '';
     position: absolute;
     background-image: url('../img/get-started/get-started_img_left.svg');
@@ -381,7 +454,7 @@ button {
     height: 230px;
     top: 160px;
     right: 80px;
-}
+} */
 
 .get-started__title {
     color: #FFFFFF;
