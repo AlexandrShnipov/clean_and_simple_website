@@ -18,7 +18,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
 a:active {
@@ -30,21 +30,25 @@ ul {
     list-style: none;
 }
 
-button {
-    outline: none;
-    transition: all 5s;
-    -webkit-transition: all 5s;
-    -moz-transition: all 5s;
-    -ms-transition: all 5s;
-    -o-transition: all 5s;
+.btn {
+    border: 1px solid transparent;
+    display: inline-block;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
 }
 
 .btn:hover {
-    background-color: #FF4500;
+    opacity: .7;
+    color: #fff;
+    border: 1px solid black;
 }
 
 .btn:active {
-    background-color: #FF00FF;
+    opacity: .9;
+    border: 1px solid red;
 }
 
 .title {
@@ -171,7 +175,7 @@ button {
     margin-bottom: 31px;
 }
 
-.blog__slaider-button-add {
+.blog__slaider-button--add {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,14 +192,13 @@ button {
     margin-right: 8px;
 }
 
-.blog__slaider-button-addition {
+.blog__slaider-button--addition {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: #FFFFFF;
-    border: none;
-    border-radius: 2px;
+        border-radius: 2px;
     font-weight: bold;
     font-size: 13px;
     line-height: 16px;
@@ -206,6 +209,11 @@ button {
     margin-bottom: 104px;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+    top: -90px;
+}
+
 .carousel-indicators li {
     width: 8px;
     height: 8px;
@@ -214,17 +222,33 @@ button {
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
-    background-color: #D1D6E3;
+    background-color: #153eb8;
     margin-bottom: 0;
 }
 
 .carousel-indicators li:active {
-    background-color: #5283FF
+    background-color: #020408
 }
 
 .carousel-indicators li:not(:last-child) {
     margin-right: 12px;
 }
+
+/* ! фон контента слайде */
+
+.blog__slaider-content--first {
+    background-color: rgb(199, 199, 247);
+}
+
+.blog__slaider-content--second {
+    background-color: rgb(162, 162, 240);
+}
+
+.blog__slaider-content--third {
+    background-color: rgb(228, 228, 245);
+}
+
+
 
 /* ! testimonials */
 
@@ -232,8 +256,6 @@ button {
     background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
     padding-left: 276px;
     padding-right: 233px;
-    position: relative;
-    overflow: hidden;
     border-top: 1px solid #D8E3FE;
     border-bottom: 1px solid #D8E3FE;
 }
@@ -267,7 +289,7 @@ button {
     padding: 0;
     margin-top: 113px;
     margin-bottom: 190px;
-          padding: 41px 60px 30px 60px;
+    padding: 41px 60px 30px 60px;
     background: #FFFFFF;
     border: 1px solid #D8E3FE;
     box-shadow: 0px 5px 50px #F3F5FA;
@@ -369,6 +391,13 @@ button {
     font-weight: 500;
 }
 
+.help__card-btn.collapsed:hover,
+.help__card-btn:hover,
+.help__card-btn.collapsed+.help__card-title-text:hover,
+.help__card-body-btn{
+border: none;
+}
+
 .help__card-body {
     display: flex;
     justify-content: space-between;
@@ -393,9 +422,12 @@ button {
     font-weight: 500;
     font-size: 13px;
     color: #7382A3;
-    border: none;
-    margin-top: 5px;
+        margin-top: 5px;
     border-radius: 2px;
+}
+
+.help__card-body-btn:hover{
+    color: black;
 }
 
 .help__card-body-btn:focus {
@@ -409,7 +441,7 @@ button {
 }
 
 .get-started__wrapper {
-       background-image: url('../img/get-started/rigth/blue_big.svg'), url('../img/get-started/rigth/blue_small.svg'),
+    background-image: url('../img/get-started/rigth/blue_big.svg'), url('../img/get-started/rigth/blue_small.svg'),
         url('../img/get-started/rigth/big.svg'),
         url('../img/get-started/rigth/small.svg'),
         url('../img/get-started/left/bottom/blue_small.svg'),
@@ -513,11 +545,15 @@ button {
     background-color: #FCFDFF;
     border-top: 1px solid #D8E3FE;
     border-bottom: 1px solid #D8E3FE;
-    padding: 118px 276px;
+    padding: 118px;
 }
 
 .newsletter__content-description {
     width: 330px;
+}
+
+.newsletter__content {
+    margin: 0 auto;
 }
 
 .newsletter__title {
@@ -534,6 +570,7 @@ button {
     line-height: 27px;
     letter-spacing: 0.03em;
     color: #8D96BD;
+    margin: 0;
 }
 
 .newsletter__input {
@@ -552,10 +589,10 @@ button {
     font-size: 13px;
     line-height: 16px;
     color: #7A85AD;
-
 }
 
 .newsletter__button {
+    width: 180px;
     padding: 23px 62px 20px;
     background: #4D6CE1;
     box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.2);
@@ -564,8 +601,7 @@ button {
     font-size: 13px;
     line-height: 16px;
     color: #FFFFFF;
-    border: none;
-    margin-left: 10px;
+       margin-left: 10px;
 }
 
 /* !footer */
@@ -583,7 +619,7 @@ button {
 }
 
 .menu__wrapper {
-    margin-bottom: 28px;
+    margin-bottom: 42px !important;
 }
 
 .menu-link {
@@ -596,6 +632,10 @@ button {
     text-shadow: 0px 0px 5px #E6E6E6;
     padding-bottom: 5px;
     padding-top: 5px;
+}
+
+.menu-link:hover {
+    border-bottom: .5px solid #000;
 }
 
 .social-link {
@@ -616,14 +656,18 @@ button {
     height: 43px;
     background: #D2E1FF;
     border-radius: 2px;
-    border: none;
-    font-weight: bold;
+       font-weight: bold;
     font-size: 13px;
     color: #3A79FF;
+    margin-left: 27px;
+}
+
+.button--started:hover {
+    background: #5e91f7;
 }
 
 .footer__copiright {
-    margin-left: 69px;
+    margin-left: 99px;
     padding: 0;
     font-weight: 500;
     font-size: 12px;
@@ -631,4 +675,46 @@ button {
     letter-spacing: 0.05em;
     text-transform: capitalize;
     color: #AEB8D0;
+}
+
+/* адаптив */
+
+@media (max-width:1200px) {
+    .newsletter__wrapper {
+        padding: 45px;
+    }
+
+    .newsletter__button {
+        padding: 23px 23px 20px;
+    }
+}
+
+@media (max-width:725px) {
+    .newsletter__text {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:550px) {
+    .newsletter__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newsletter__input {
+        margin-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 48px;
+    }
+
+    .newsletter__input::placeholder {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+
+    .newsletter__button {
+        margin: 0;
+        font-size: 20px;
+    }
 }
