@@ -102,13 +102,13 @@
     <div class='container-fluid statistics'>
         <div class='row justify-content-center'>
             <div
-                class='col-6 statistics__progress statistics__description d-flex flex-column align-items-end align-content-between'>
+                class='col-12 col-sm-6 statistics__progress statistics__description d-flex flex-column align-items-end align-content-between'>
                 <img class='statistics__img' src="./img/statistics/icon_clock.svg" alt="icon_clock">
                 <p class='statistics__indicator'>89%</p>
                 <p class='text-right statistics__progress-description statistics__text'>Customers who have increased
                     their productivity</p>
             </div>
-            <div class='col-6 statistics__users statistics__description'>
+            <div class='col-12 col-sm-6 statistics__users statistics__description'>
                 <img class='statistics__img' src="./img/statistics/icon_users.svg" alt="icon_users">
                 <p class='statistics__indicator'>3123</p>
                 <p class='statistics__progress-description statistics__text'>Users who have used our application</p>
@@ -118,7 +118,7 @@
 
     <!-- !blog -->
 
-    <section class='blog__wrapper'>
+    <section class='blog-wrapper'>
         <div class='container-fluid blog p-0'>
             <div class="row blog__title justify-content-center no-gutters">
                 <div class="col-12 d-flex flex-column text-center">
@@ -294,18 +294,18 @@
         </div>
     </section>
 
-    <!-- !quotes-->
-    <section class="testimonials__wrapper">
+    <!-- !testimonials-->
+    <section class="testimonials-wrapper">
         <div class='container-fluid testimonials'>
-            <div class="row d-flex flex-nowrap justify-content-between">
-                <div class="col-5 testimonials__description">
+            <div class="row d-flex justify-content-between testimonials__content">
+                <div class="col-12 col-lg-5 testimonials__description">
                     <h4 class="testimonials__title title">testimonials</h4>
                     <span class='testimonials__title-slogan title-slogan'>Customers's quotes</span>
                     <p class='testimonials__text'>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu
                         atqui
                         laudem an.</p>
                 </div>
-                <div class="col-5 offset-2 p-0 testimonials__slaider d-flex justify-content-start">
+                <div class="col-12 col-lg-5 offset-2 p-0 testimonials__slaider d-flex justify-content-start">
                     <!-- <div class="testimonials__slaider-content d-flex flex-column  align-items-start">
                         <p class='testimonials__slaider-text'>Quidam vocibus eum ne, erat consectetuer voluptatibus ut
                             nam.
@@ -376,7 +376,7 @@
     <!-- !questions -->
 
     <div class="questions">
-        <div class=" container">
+        <div class="container">
             <div class="row questions__title no-gutters text-center">
                 <div class="col">
                     <h2 class="questions__title-text title">CUSTOMER HELP</h2>
@@ -486,7 +486,7 @@
         <section class="get-started__wrapper">
             <div class='container get-started'>
                 <div class="row d-flex justify-content-center">
-                    <div class="col-8 get-started__content d-flex flex-column text-center">
+                    <div class="col-8 get-started__content d-flex flex-column p-0 text-center">
                         <h4 class='get-started__title title'>PLAN YOUR LIFE</h4>
                         <h5 class="get-started__subtitle">Get <span class='get-started__subtitle--bold'>started</span>
                             now
@@ -494,7 +494,7 @@
                         <p class="get-started__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu
                             atqui
                             laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.</p>
-                        <div class="get-started__links d-flex justify-content-center">
+                        <div class="get-started__links d-flex justify-content-center flex-wrap">
                             <a class='get-started__link--price get-started__link d-flex justify-content-center align-items-center text-center'
                                 href="#">View pricing</a>
                             <a class="get-started__link--documentation get-started__link d-flex justify-content-center align-items-center text-center"
@@ -507,7 +507,7 @@
     </main>
     <!-- ! newsletter -->
 
-    <section class='newsletter__wrapper'>
+    <section class='newsletter-wrapper'>
         <div class='container-fluid newsletter p-0'>
             <div class="row  d-flex justify-content-between no-gutters  newsletter__content">
                 <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
@@ -540,7 +540,7 @@
 
     <div class='container-fluid footer'>
         <div class="row menu__wrapper d-flex justify-content-between align-items-center p-0 m-0">
-            <div class="col-6 d-flex p-0 m-0">
+            <div class="col-12 col-lg-6 d-flex p-0 m-0 menu-block">
                 <img class='circle' src="./img/footer/circle.svg" alt="circle">
                 <nav class="menu">
                     <ul class="menu-list d-flex align-items-center p-0 m-0">
@@ -562,7 +562,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-5 d-flex justify-content-end p-0 social-list">
+            <div class="col-12 col-lg-5 d-flex justify-content-end p-0 social-list">
                 <a href="#" class="social-link">
                     <img class="social-icon" src="./img/social/facebook.svg" alt="facebook_icon">
                 </a>
@@ -576,10 +576,9 @@
                     <img class="social-icon" src="./img/social/medium.svg" alt="medium_icon">
                 </a>
                 <button class='button--started btn'>Get started</button>
-
             </div>
         </div>
-        <div class='col-12 d-flex justify-content-start p-0 m-0'>
+        <div class='col-12 d-flex justify-content-start p-0 m-0 footer__copiright-block'>
             <span class='footer__copiright'>Copyright © 2018 by Random site
             </span>
         </div>
