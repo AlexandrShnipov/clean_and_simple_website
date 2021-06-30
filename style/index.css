@@ -69,7 +69,7 @@ ul {
 
 .container__inner {
     position: relative;
-       }
+}
 
 .menu__container {
     padding-right: 117px;
@@ -518,6 +518,7 @@ ul {
         url('../img/get-started/left/top/blue.svg'),
         url('../img/get-started/left/top/big.svg'),
         url('../img/get-started/left/top/small.svg');
+    position: relative;
     background-position: bottom 109px right 354px,
         bottom 109px right 93px,
         bottom 64px right 107px,
@@ -530,7 +531,7 @@ ul {
     background-repeat: no-repeat;
     padding-top: 91px;
     padding-bottom: 91px;
-    position: relative;
+
 }
 
 .get-started__title {
@@ -762,7 +763,7 @@ ul {
             margin-right: 30px;
         }
 
-        .carousel-control-next {
+                .carousel-control-next {
             right: 25px;
         }
 
@@ -809,16 +810,8 @@ ul {
             padding: 0;
         }
 
-        .testimonials__content {
-            justify-content: center !important;
-        }
-
         .testimonials__description {
             text-align: center;
-        }
-
-        .testimonials__slaider {
-            justify-content: center !important;
         }
 
         .testimonials__text {
@@ -854,6 +847,10 @@ ul {
         .footer {
             padding-top: 50px;
             padding-bottom: 50px;
+        }
+
+        .footer__copiright {
+            margin-left: 78px;
         }
     }
 
