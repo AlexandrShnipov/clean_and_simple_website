@@ -8,6 +8,11 @@ body {
     padding: 0;
 }
 
+.container-fluid,
+.container {
+    max-width: 1440px;
+}
+
 a {
     transition: all .5s;
     -webkit-transition: all .5s;
@@ -64,7 +69,7 @@ ul {
 
 .container__inner {
     position: relative;
-}
+       }
 
 .menu__container {
     padding-right: 117px;
@@ -76,7 +81,7 @@ ul {
 }
 
 .nav-item:not(:last-child) {
-    margin-right: 42px;
+    margin-right: 26px;
 }
 
 .nav-link {
@@ -500,7 +505,7 @@ ul {
 
 /* !get-started */
 
-.main__get-started {
+.get-started__inner {
     background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
 }
 
@@ -527,29 +532,6 @@ ul {
     padding-bottom: 91px;
     position: relative;
 }
-
-/* .get-started__wrapper::before {
-    content: '';
-    position: absolute;
-    background-image: url('../img/get-started/get-started_img_left.svg');
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 370px;
-    top: 15px;
-    left: 27px;
-
-}
-
-.get-started__wrapper::after {
-    content: '';
-    position: absolute;
-    background-image: url('../img/get-started/get-started_img_right.svg');
-    background-repeat: no-repeat;
-    width: 475px;
-    height: 230px;
-    top: 160px;
-    right: 80px;
-} */
 
 .get-started__title {
     color: #FFFFFF;
@@ -609,7 +591,6 @@ ul {
     background-color: #FCFDFF;
     border-top: 1px solid #D8E3FE;
     border-bottom: 1px solid #D8E3FE;
-    padding: 118px;
 }
 
 .newsletter__content-description {
@@ -618,6 +599,7 @@ ul {
 
 .newsletter__content {
     margin: 0 auto;
+    padding: 118px 276px;
 }
 
 .newsletter__title {
@@ -676,12 +658,12 @@ ul {
     padding-bottom: 93px;
 }
 
-.menu__wrapper {
-    margin-bottom: 42px !important;
+.footer>.container__inner {
+    margin-bottom: 42px;
 }
 
 .footer__copiright {
-    margin-left: 99px;
+    margin-left: 120px;
     padding: 0;
     font-weight: 500;
     font-size: 12px;
@@ -693,7 +675,29 @@ ul {
 
 /* !адаптив */
 
+@media (max-width:1370px) {
+    .testimonials-wrapper {
+        padding-left: 150px;
+        padding-right: 100px;
+    }
+
+    .testimonials__title {
+        margin-top: 80px;
+        margin-bottom: 25px;
+    }
+
+    .testimonials__slaider-content {
+        margin-top: 80px;
+        margin-bottom: 32px;
+    }
+}
+
 @media (max-width:1200px) {
+
+    .menu__container {
+        padding-left: 20px !important;
+        padding-right: 55px !important;
+    }
 
     .blog-wrapper {
         padding-top: 60px;
@@ -716,14 +720,18 @@ ul {
     }
 
     .testimonials-wrapper {
-        padding-left: 150px;
+        padding-left: 50px;
+    }
+
+    .testimonials__title-slogan {
+        font-size: 35px;
     }
 
     .questions {
         padding: 100px 0;
     }
 
-    .newsletter-wrapper {
+    .newsletter__content {
         padding: 100px 45px;
     }
 
@@ -749,6 +757,10 @@ ul {
     }
 
     @media (max-width:992px) {
+
+        .circle {
+            margin-right: 30px;
+        }
 
         .carousel-control-next {
             right: 25px;
@@ -822,7 +834,7 @@ ul {
             padding: 70px 0;
         }
 
-        .newsletter-wrapper {
+        .newsletter__content {
             padding: 35px;
         }
 
@@ -839,16 +851,13 @@ ul {
             justify-content: center !important;
         }
 
-        .footer__copiright-block {
-            justify-content: center !important;
-        }
-
-        .footer__copiright {
-            margin: 0;
+        .footer {
+            padding-top: 50px;
+            padding-bottom: 50px;
         }
     }
 
-    @media (max-width:768px) {
+    @media (max-width:767px) {
         .circle {
             display: none;
         }
@@ -856,7 +865,19 @@ ul {
         .navbar {
             position: absolute;
             left: 0;
-            top: 15px;
+            top: -8px;
+        }
+
+        .carousel-inner {
+            margin-bottom: 10px;
+        }
+
+        .testimonials__slaider-content {
+            margin-bottom: 120px;
+        }
+
+        .footer__copiright {
+            margin-left: 0;
         }
     }
 
@@ -951,7 +972,7 @@ ul {
         }
 
         .help__card-text {
-                      margin-right: 20px;
+            margin-right: 20px;
         }
 
         .newsletter__form {
@@ -984,7 +1005,6 @@ ul {
         }
 
         .navbar {
-            top: 2px;
             z-index: 10;
         }
 
@@ -1029,6 +1049,11 @@ ul {
         .testimonials__title-slogan {
             font-size: 24px;
         }
+
+        .footer__copiright {
+            font-size: 10px;
+        }
+
 
     }
 

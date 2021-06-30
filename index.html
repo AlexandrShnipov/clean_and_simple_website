@@ -21,41 +21,46 @@
 
     <!-- !header -->
 
-    <div class="container-fluid header menu__container">
-
-        <div class="сщтефштук__inner d-flex align-items-center">
-            <nav class="navbar navbar-expand-md navbar-light">
-                <img class='circle' src="./img/footer/circle.svg" alt="circle">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Переключатель навигации">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Documentation <span class="sr-only">(текущая)</span></a>
-                        </li>
-                    </ul>
+    <div class="header">
+        <div class="container-fluid menu__container">
+            
+            <div class="row d-flex justify-content-between p-0 m-0">
+                <div class="col-12 p-0 m-0 container__inner d-flex  align-items-center">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <img class='circle' src="./img/footer/circle.svg" alt="circle">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Переключатель навигации">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Documentation <span class="sr-only">(текущая)</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                
+                        <!-- <button class='button--started btn'>Get started</button> -->
+                    </nav>
+                    <button class='button--started btn ml-auto'>Get started</button>
                 </div>
+            </div>
 
-                <!-- <button class='button--started btn'>Get started</button> -->
-            </nav>
-            <button class='button--started btn ml-auto'>Get started</button>
         </div>
     </div>
 
@@ -151,7 +156,8 @@
                                             everti
                                             periculis vis ei, quas tibique pro at, eos ut decore ...
                                         </p>
-                                        <div class='blog__slaider-buttons d-flex flex-column flex-sm-row  align-items-start'>
+                                        <div
+                                            class='blog__slaider-buttons d-flex flex-column flex-sm-row  align-items-start'>
                                             <button class='blog__slaider-button--add btn'>Read now</button>
                                             <button class='blog__slaider-button--addition btn'>Add to your
                                                 bookmarks</button>
@@ -271,8 +277,8 @@
     </section>
 
     <!-- !testimonials-->
-    <section class="testimonials-wrapper">
-        <div class='container-fluid testimonials'>
+    <section class="testimonials">
+        <div class='container-fluid testimonials-wrapper'>
             <div class="row d-flex justify-content-between testimonials__content">
                 <div class="col-12 col-lg-5 testimonials__description">
                     <h4 class="testimonials__title title">testimonials</h4>
@@ -529,9 +535,9 @@
 
 
     <!-- ! get-started-->
-    <main class='main__get-started'>
-        <section class="get-started__wrapper">
-            <div class='container get-started'>
+    <section class='get-started'>
+              <div class="container get-started__inner">
+            <div class="container get-started__wrapper">
                 <div class="row d-flex justify-content-center">
                     <div class="col-8 get-started__content d-flex flex-column p-0 text-center">
                         <h4 class='get-started__title title'>PLAN YOUR LIFE</h4>
@@ -550,12 +556,12 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+      </div>
+    </section>
     <!-- ! newsletter -->
 
-    <section class='newsletter-wrapper'>
-        <div class='container-fluid newsletter p-0'>
+    <section class='newsletter'>
+        <div class='container-fluid newsletter-wrapper p-0'>
             <div class="row  d-flex justify-content-between no-gutters  newsletter__content">
                 <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
                     <div class='newsletter__content-description'>
@@ -621,7 +627,7 @@
             <button class='button--started btn ml-auto'>Get started</button>
         </div>
 
-        <div class='col-12 d-flex justify-content-start p-0 m-0 footer__copiright-block'>
+        <div class='col-12 d-flex justify-content-end justify-content-md-start  p-0 m-0 footer__copiright-block'>
             <span class='footer__copiright'>Copyright © 2018 by Random site
             </span>
         </div>
