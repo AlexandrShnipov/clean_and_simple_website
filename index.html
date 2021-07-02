@@ -22,46 +22,64 @@
     <!-- !header -->
 
     <div class="header">
-        <div class="container-fluid menu__container">
+        <div class="container-fluid p-0 m-0">
+            <div class="container__wrap">
+                <div class="container__inner">
+                    <div class="row d-flex justify-content-between align-items-center p-0 m-0">
+                        <div class="col-12 p-0 m-0 container__inner d-flex justify-content-between align-items-center">
+                            <nav class="navbar navbar-expand-lg navbar-light p-0 m-0">
+                                <img class='logo' src="./img/logo.svg" alt="logo">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Переключатель навигации">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
 
-            <div class="row d-flex justify-content-between p-0 m-0">
-                <div class="col-12 p-0 m-0 container__inner d-flex  align-items-center">
-                    <nav class="navbar navbar-expand-md navbar-light">
-                        <img class='circle' src="./img/footer/circle.svg" alt="circle">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Переключатель навигации">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Home</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Blog</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Features</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Pricing</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">Documentation <span
+                                                    class="sr-only">(текущая)</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Home</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Features</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Pricing</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Documentation <span
-                                            class="sr-only">(текущая)</span></a>
-                                </li>
-                            </ul>
+                                <!-- <button class='button--started btn'>Get started</button> -->
+                            </nav>
+
+                            <div class="social__links d-flex justify-content-between p-0 m-0 ml-auto">
+                                <a class="social__link" href="#">
+                                    <img class="social__img" src="/img/social/facebook.svg" alt="facebook">
+                                </a>
+                                <a class="social__link" href="#">
+                                    <img class="social__img" src="/img/social/telegram.svg" alt="telegram">
+                                </a>
+                                <a class="social__link" href="#">
+                                    <img class="social__img" src="/img/social/twitter.svg" alt="twitter">
+                                </a>
+                                <a class="social__link" href="#">
+                                    <img class="social__img" src="/img/social/medium.svg" alt="medium">
+                                </a>
+                            </div>
+
+                            <button class='button--started btn'>Get started</button>
                         </div>
-
-                        <!-- <button class='button--started btn'>Get started</button> -->
-                    </nav>
-                    <button class='button--started btn ml-auto'>Get started</button>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -76,6 +94,7 @@
 
 
 
+    </div>
     </div>
 
 
@@ -100,180 +119,190 @@
 
     <!-- !blog -->
 
-    <section class='blog-wrapper'>
-        <div class='container-fluid blog p-0'>
-            <div class="row blog__title justify-content-center no-gutters">
-                <div class="col-12 d-flex flex-column text-center">
-                    <h3 class='blog__title title'>OUR RESOURCES</h3>
-                    <span class="blog__title-slogan title-slogan">Start reading our blog</span>
-                </div>
-            </div>
-
-            <!--? slaider -->
-
-            <div id="sliderBlog" class="carousel slide" data-ride="carousel" data-interval="false">
-                <ol class="carousel-indicators mb-0">
-                    <li data-target="#sliderBlog" data-slide-to="0" class="blog__carousel-indicators active"></li>
-                    <li data-target="#sliderBlog" data-slide-to="1" class='blog__carousel-indicators'>
-                    </li>
-                    <li data-target="#sliderBlog" data-slide-to="2" class='blog__carousel-indicators'>
-                    </li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class='blog__slaider-wrapper'>
-                            <div class="row blog__slaider no-gutters">
-                                <div
-                                    class="col-12 blog__slaider-content--first d-flex justify-content-center align-items-start">
-                                    <div class="blog__slaider-images d-flex ">
-                                        <div class='slaider__images-left'>
-                                            <img class='slaider__images-left--big' src="./img/blog/img_big.svg"
-                                                alt="images">
-                                            <a class='slaider__images-link' href="#">
-                                                <img class='slaider__images-left--search'
-                                                    src="./img/blog/img_search.svg" alt="images_search">
-                                            </a>
-                                        </div>
-                                        <div class="slaider-images-right d-flex flex-column">
-                                            <img class='slaider-images-right--top' src="./img/blog/img_top.svg"
-                                                alt="images">
-                                            <img class=' slaider-images-right--bottom' src="./img/blog/img_bottom.svg"
-                                                alt="images">
-                                        </div>
-                                    </div>
-                                    <!-- <img class="blog__slaider-img" src="./img/blog/illustrations-1.svg"
-                                        alt="slaider_img"> -->
-                                    <div class="blog__slaider-description">
-                                        <h2 class='blog__slaider-title'>
-                                            How to start planning
-                                        </h2>
-                                        <p class="blog__slaider-text">
-                                            Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit
-                                            tractatos,
-                                            vero
-                                            tractatos ius an, in mel diceret persecuti. Natum petentium principes mei
-                                            ea.
-                                            Tota
-                                            everti
-                                            periculis vis ei, quas tibique pro at, eos ut decore ...
-                                        </p>
-                                        <div
-                                            class='blog__slaider-buttons d-flex flex-column flex-sm-row align-items-start'>
-                                            <button class='blog__slaider-button--add btn'>Read now</button>
-                                            <button class='blog__slaider-button--addition btn'>Add to your
-                                                bookmarks</button>
-                                            <!-- <a class='blog__slaider-link-add' href="#">Read now</a>
-                                            <a class='blog__slaider-link-addition' href="#">Add to your bookmarks</a> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class='blog__slaider-wrapper'>
-                            <div class="row blog__slaider no-gutters">
-                                <div
-                                    class="col-12 blog__slaider-content--second d-flex justify-content-center align-items-start">
-                                    <div class="blog__slaider-images d-flex ">
-                                        <div class='slaider__images-left'>
-                                            <img class='slaider__images-left--big' src="./img/blog/img_big.svg"
-                                                alt="images">
-                                            <a class='slaider__images-link' href="#">
-                                                <img class='slaider__images-left--search'
-                                                    src="./img/blog/img_search.svg" alt="images_search">
-                                            </a>
-                                        </div>
-                                        <div class="slaider-images-right d-flex flex-column">
-                                            <img class='slaider-images-right--top' src="./img/blog/img_top.svg"
-                                                alt="images">
-                                            <img class=' slaider-images-right--bottom' src="./img/blog/img_bottom.svg"
-                                                alt="images">
-                                        </div>
-                                    </div>
-                                    <div class="blog__slaider-description">
-                                        <h2 class='blog__slaider-title'>
-                                            How to start planning
-                                        </h2>
-                                        <p class="blog__slaider-text">
-                                            Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit
-                                            tractatos,
-                                            vero
-                                            tractatos ius an, in mel diceret persecuti. Natum petentium principes mei
-                                            ea.
-                                            Tota
-                                            everti
-                                            periculis vis ei, quas tibique pro at, eos ut decore ...
-                                        </p>
-                                        <div class='blog__slaider-buttons d-flex'>
-                                            <button class='blog__slaider-button--add btn'>Read now</button>
-                                            <button class='blog__slaider-button--addition btn'>Add to your
-                                                bookmarks</button>
-                                            <!-- <a class='blog__slaider-link-add' href="#">Read now</a>
-                                            <a class='blog__slaider-link-addition' href="#">Add to your bookmarks</a> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class='blog__slaider-wrapper'>
-                            <div class="row blog__slaider no-gutters">
-                                <div
-                                    class="col-12 blog__slaider-content--third d-flex justify-content-center align-items-start">
-                                    <div class="blog__slaider-images d-flex ">
-                                        <div class='slaider__images-left'>
-                                            <img class='slaider__images-left--big' src="./img/blog/img_big.svg"
-                                                alt="images">
-                                            <a class='slaider__images-link' href="#">
-                                                <img class='slaider__images-left--search'
-                                                    src="./img/blog/img_search.svg" alt="images_search">
-                                            </a>
-                                        </div>
-                                        <div class="slaider-images-right d-flex flex-column">
-                                            <img class='slaider-images-right--top' src="./img/blog/img_top.svg"
-                                                alt="images">
-                                            <img class=' slaider-images-right--bottom' src="./img/blog/img_bottom.svg"
-                                                alt="images">
-                                        </div>
-                                    </div>
-                                    <div class="blog__slaider-description">
-                                        <h2 class='blog__slaider-title'>
-                                            How to start planning
-                                        </h2>
-                                        <p class="blog__slaider-text">
-                                            Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit
-                                            tractatos,
-                                            vero
-                                            tractatos ius an, in mel diceret persecuti. Natum petentium principes mei
-                                            ea. Tota
-                                            everti
-                                            periculis vis ei, quas tibique pro at, eos ut decore ...
-                                        </p>
-                                        <div class='blog__slaider-buttons d-flex'>
-                                            <button class='blog__slaider-button--add btn'>Read now</button>
-                                            <button class='blog__slaider-button--addition btn'>Add to your
-                                                bookmarks</button>
-                                            <!-- <a class='blog__slaider-link-add' href="#">Read now</a>
-                                            <a class='blog__slaider-link-addition' href="#">Add to your bookmarks</a> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <section class='blog'>
+        <div class='container-fluid p-0 m-0'>
+            <div class="container__wrap">
+                <div class="row blog__title justify-content-center no-gutters">
+                    <div class="col-12 d-flex flex-column text-center">
+                        <h3 class='blog__title title'>OUR RESOURCES</h3>
+                        <span class="blog__title-slogan title-slogan">Start reading our blog</span>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#sliderBlog" role="button" data-slide="prev">
-                    <img src="./img/blog/arrow_left.svg" alt="">
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#sliderBlog" role="button" data-slide="next">
-                    <img src="./img/blog/arrow_right.svg" alt="">
-                    <span class="sr-only">Next</span>
-                </a>
+
+                <!--? slaider -->
+
+                <div id="sliderBlog" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators mb-0">
+                        <li data-target="#sliderBlog" data-slide-to="0" class="blog__carousel-indicators active"></li>
+                        <li data-target="#sliderBlog" data-slide-to="1" class='blog__carousel-indicators'>
+                        </li>
+                        <li data-target="#sliderBlog" data-slide-to="2" class='blog__carousel-indicators'>
+                        </li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class='blog__slaider-wrapper'>
+                                <div class="row m-auto blog__slaider no-gutters">
+                                    <div
+                                        class="col-12 blog__slaider-content--first d-flex justify-content-center align-items-start">
+                                        <div class="blog__slaider-images d-flex ">
+                                            <div class='slaider__images-left'>
+                                                <img class='slaider__images-left--big' src="./img/blog/img_big.svg"
+                                                    alt="images">
+                                                <a class='slaider__images-link' href="#">
+                                                    <img class='slaider__images-left--search'
+                                                        src="./img/blog/img_search.svg" alt="images_search">
+                                                </a>
+                                            </div>
+                                            <div class="slaider-images-right d-flex flex-column">
+                                                <img class='slaider-images-right--top' src="./img/blog/img_top.svg"
+                                                    alt="images">
+                                                <img class=' slaider-images-right--bottom'
+                                                    src="./img/blog/img_bottom.svg" alt="images">
+                                            </div>
+                                        </div>
+                                        <!-- <img class="blog__slaider-img" src="./img/blog/illustrations-1.svg"
+                                            alt="slaider_img"> -->
+                                        <div class="blog__slaider-description">
+                                            <h2 class='blog__slaider-title'>
+                                                How to start planning
+                                            </h2>
+                                            <p class="blog__slaider-text">
+                                                Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu
+                                                vidit
+                                                tractatos,
+                                                vero
+                                                tractatos ius an, in mel diceret persecuti. Natum petentium principes
+                                                mei
+                                                ea.
+                                                Tota
+                                                everti
+                                                periculis vis ei, quas tibique pro at, eos ut decore ...
+                                            </p>
+                                            <div
+                                                class='blog__slaider-buttons d-flex flex-column flex-sm-row  align-items-start'>
+                                                <button class='blog__slaider-button--add btn'>Read now</button>
+                                                <button class='blog__slaider-button--addition btn'>Add to your
+                                                    bookmarks</button>
+                                                <!-- <a class='blog__slaider-link-add' href="#">Read now</a>
+                                                <a class='blog__slaider-link-addition' href="#">Add to your bookmarks</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class='blog__slaider-wrapper'>
+                                <div class="row blog__slaider no-gutters">
+                                    <div
+                                        class="col-12 blog__slaider-content--second d-flex justify-content-center align-items-start">
+                                        <div class="blog__slaider-images d-flex ">
+                                            <div class='slaider__images-left'>
+                                                <img class='slaider__images-left--big' src="./img/blog/img_big.svg"
+                                                    alt="images">
+                                                <a class='slaider__images-link' href="#">
+                                                    <img class='slaider__images-left--search'
+                                                        src="./img/blog/img_search.svg" alt="images_search">
+                                                </a>
+                                            </div>
+                                            <div class="slaider-images-right d-flex flex-column">
+                                                <img class='slaider-images-right--top' src="./img/blog/img_top.svg"
+                                                    alt="images">
+                                                <img class=' slaider-images-right--bottom'
+                                                    src="./img/blog/img_bottom.svg" alt="images">
+                                            </div>
+                                        </div>
+                                        <div class="blog__slaider-description">
+                                            <h2 class='blog__slaider-title'>
+                                                How to start planning
+                                            </h2>
+                                            <p class="blog__slaider-text">
+                                                Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu
+                                                vidit
+                                                tractatos,
+                                                vero
+                                                tractatos ius an, in mel diceret persecuti. Natum petentium principes
+                                                mei
+                                                ea.
+                                                Tota
+                                                everti
+                                                periculis vis ei, quas tibique pro at, eos ut decore ...
+                                            </p>
+                                            <div
+                                                class='blog__slaider-buttons d-flex flex-column flex-sm-row  align-items-start'>
+                                                <button class='blog__slaider-button--add btn'>Read now</button>
+                                                <button class='blog__slaider-button--addition btn'>Add to your
+                                                    bookmarks</button>
+                                                <!-- <a class='blog__slaider-link-add' href="#">Read now</a>
+                                            <a class='blog__slaider-link-addition' href="#">Add to your bookmarks</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class='blog__slaider-wrapper'>
+                                <div class="row blog__slaider no-gutters">
+                                    <div
+                                        class="col-12 blog__slaider-content--third d-flex justify-content-center align-items-start">
+                                        <div class="blog__slaider-images d-flex ">
+                                            <div class='slaider__images-left'>
+                                                <img class='slaider__images-left--big' src="./img/blog/img_big.svg"
+                                                    alt="images">
+                                                <a class='slaider__images-link' href="#">
+                                                    <img class='slaider__images-left--search'
+                                                        src="./img/blog/img_search.svg" alt="images_search">
+                                                </a>
+                                            </div>
+                                            <div class="slaider-images-right d-flex flex-column">
+                                                <img class='slaider-images-right--top' src="./img/blog/img_top.svg"
+                                                    alt="images">
+                                                <img class=' slaider-images-right--bottom'
+                                                    src="./img/blog/img_bottom.svg" alt="images">
+                                            </div>
+                                        </div>
+                                        <div class="blog__slaider-description">
+                                            <h2 class='blog__slaider-title'>
+                                                How to start planning
+                                            </h2>
+                                            <p class="blog__slaider-text">
+                                                Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu
+                                                vidit
+                                                tractatos,
+                                                vero
+                                                tractatos ius an, in mel diceret persecuti. Natum petentium principes
+                                                mei
+                                                ea. Tota
+                                                everti
+                                                periculis vis ei, quas tibique pro at, eos ut decore ...
+                                            </p>
+                                            <div
+                                                class='blog__slaider-buttons d-flex flex-column flex-sm-row  align-items-start'>
+                                                <button class='blog__slaider-button--add btn'>Read now</button>
+                                                <button class='blog__slaider-button--addition btn'>Add to your
+                                                    bookmarks</button>
+                                                <!-- <a class='blog__slaider-link-add' href="#">Read now</a>
+                                                <a class='blog__slaider-link-addition' href="#">Add to your bookmarks</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#sliderBlog" role="button" data-slide="prev">
+                        <img src="./img/blog/arrow_left.svg" alt="">
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#sliderBlog" role="button" data-slide="next">
+                        <img src="./img/blog/arrow_right.svg" alt="">
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <!-- слайдер -->
             </div>
-            <!--? слайдер -->
         </div>
     </section>
 
@@ -284,14 +313,16 @@
                 <div class="col-12 col-lg-5 text-start  testimonials__description">
                     <h4 class="testimonials__title title">testimonials</h4>
                     <span class='testimonials__title-slogan title-slogan'>Customers's quotes</span>
-                    <p class='testimonials__text'>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu
+                    <p class='testimonials__text'>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
+                        Usu
                         atqui
                         laudem an.</p>
                 </div>
 
                 <!--  слайдер -->
 
-                <div class="col-12 col-lg-5 offset-lg-2 p-0 testimonials__slaider d-flex justify-content-center justify-content-lg-start ">
+                <div
+                    class="col-12 col-lg-5 offset-lg-2 p-0 testimonials__slaider d-flex justify-content-center justify-content-lg-start ">
                     <div id="sliderTestimonials" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#sliderTestimonials" data-slide-to="0" class="active"></li>
@@ -405,7 +436,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- !обрезанная тень слайдера -->
 
                         <!-- <div class="testimonials__slaider-shadow">
@@ -451,7 +481,8 @@
 
                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="help__card-body">
-                                <p class="help__card-text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
+                                <p class="help__card-text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut
+                                    nam.
                                     Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
                             </div>
                         </div>
@@ -469,7 +500,8 @@
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                             <div class="help__card-body">
-                                <p class="help__card-text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
+                                <p class="help__card-text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut
+                                    nam.
                                     Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
                             </div>
                         </div>
@@ -487,7 +519,8 @@
                         <div id="collapseThree" class="collapse show" aria-labelledby="headingThree"
                             data-parent="#accordion">
                             <div class="help__card-body">
-                                <p class="help__card-text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
+                                <p class="help__card-text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut
+                                    nam.
                                     Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
                                 <button class="help__card-body-btn btn">Go to documentation</button>
                             </div>
@@ -506,7 +539,8 @@
                         </div>
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                             <div class="help__card-body">
-                                <p class="help__card-text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
+                                <p class="help__card-text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut
+                                    nam.
                                     Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
                             </div>
                         </div>
@@ -524,7 +558,8 @@
                         </div>
                         <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
                             <div class="help__card-body">
-                                <p class="help__card-text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
+                                <p class="help__card-text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut
+                                    nam.
                                     Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
                             </div>
                         </div>
@@ -537,22 +572,27 @@
 
     <!-- ! get-started-->
     <section class='get-started'>
-        <div class="container get-started__inner">
-            <div class="container get-started__wrapper">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-8 get-started__content d-flex flex-column p-0 text-center">
-                        <h4 class='get-started__title title'>PLAN YOUR LIFE</h4>
-                        <h5 class="get-started__subtitle">Get <span class='get-started__subtitle--bold'>started</span>
-                            now
-                        </h5>
-                        <p class="get-started__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu
-                            atqui
-                            laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.</p>
-                        <div class="get-started__links d-flex justify-content-center flex-wrap">
-                            <a class='get-started__link--price get-started__link d-flex justify-content-center align-items-center text-center'
-                                href="#">View pricing</a>
-                            <a class="get-started__link--documentation get-started__link d-flex justify-content-center align-items-center text-center"
-                                href="#">Read documentation</a>
+
+        <div class="container-fluid">
+            <div class="get-started__inner">
+                <div class="get-started__wrapper">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-8 get-started__content d-flex flex-column align-items-center p-0 text-center">
+                            <h4 class='get-started__title title'>PLAN YOUR LIFE</h4>
+                            <h5 class="get-started__subtitle">Get <span
+                                    class='get-started__subtitle--bold'>started</span>
+                                now
+                            </h5>
+                            <p class="get-started__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
+                                Usu
+                                atqui
+                                laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.</p>
+                            <div class="get-started__links d-flex justify-content-center flex-wrap">
+                                <a class='get-started__link--price get-started__link d-flex justify-content-center align-items-center text-center'
+                                    href="#">View pricing</a>
+                                <a class="get-started__link--documentation get-started__link d-flex justify-content-center align-items-center text-center"
+                                    href="#">Read documentation</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -567,7 +607,8 @@
                 <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
                     <div class='newsletter__content-description'>
                         <h3 class='newsletter__title'>Sign up for newsletter</h3>
-                        <p class='newsletter__text'>Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero
+                        <p class='newsletter__text'>Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu,
+                            homero
                             alterum.</p>
                     </div>
                 </div>
@@ -592,45 +633,65 @@
 
     <!-- !footer -->
 
-    <div class='container-fluid footer menu__container'>
-        <div class="container__inner d-flex align-items-center">
-            <nav class="navbar navbar-expand-md navbar-light">
-                <img class='circle' src="./img/footer/circle.svg" alt="circle">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Переключатель навигации">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <div class="footer">
+        <div class="container-fluid p-0 m-0">
+            <div class="container__wrap">
+                <div class="container__inner">
+                    <div class="row d-flex justify-content-between align-items-center p-0 m-0">
+                        <div class="col-12 p-0 m-0 container__inner d-flex justify-content-between align-items-center">
+                            <nav class="navbar navbar-expand-lg navbar-light p-0 m-0">
+                                <img class='logo' src="./img/logo.svg" alt="logo">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Переключатель навигации">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Documentation <span class="sr-only">(текущая)</span></a>
-                        </li>
-                    </ul>
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Home</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Blog</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Features</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Pricing</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">Documentation <span
+                                                    class="sr-only">(текущая)</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- <button class='button--started btn'>Get started</button> -->
+                            </nav>
+
+                            <div class="social__links d-flex justify-content-between p-0 m-0 ml-auto">
+                                <a class="social__link" href="#">
+                                    <img class="social__img" src="/img/social/facebook.svg" alt="facebook">
+                                </a>
+                                <a class="social__link" href="#">
+                                    <img class="social__img" src="/img/social/telegram.svg" alt="telegram">
+                                </a>
+                                <a class="social__link" href="#">
+                                    <img class="social__img" src="/img/social/twitter.svg" alt="twitter">
+                                </a>
+                                <a class="social__link" href="#">
+                                    <img class="social__img" src="/img/social/medium.svg" alt="medium">
+                                </a>
+                            </div>
+
+                            <button class='button--started btn'>Get started</button>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- <button class='button--started btn'>Get started</button> -->
-            </nav>
-            <button class='button--started btn ml-auto'>Get started</button>
-        </div>
-
-        <div class='col-12 d-flex justify-content-end justify-content-md-start  p-0 m-0 footer__copiright-block'>
-            <span class='footer__copiright'>Copyright © 2018 by Random site
-            </span>
+            </div>
         </div>
     </div>
 
