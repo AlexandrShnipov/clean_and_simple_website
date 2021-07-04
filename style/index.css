@@ -59,6 +59,13 @@ ul {
     margin-bottom: 20px;
 }
 
+.slogan {
+    display: inline-block;
+    font-size: 36px;
+    line-height: 45px;
+    color: #3D4F9F;
+}
+
 .title__slogan {
     display: inline-block;
     font-weight: 500;
@@ -185,7 +192,7 @@ ul {
     object-fit: cover;
 }
 
-.carousel-control-prev__planning-img {
+.carousel-control-next__planning-img {
     position: absolute;
     top: 175px;
     left: 50%;
@@ -215,11 +222,7 @@ ul {
 }
 
 .manage__slogan {
-    display: inline-block;
     font-weight: 500;
-    font-size: 36px;
-    line-height: 45px;
-    color: #3D4F9F;
     margin-bottom: 27px;
 }
 
@@ -322,7 +325,7 @@ ul {
     margin: 0 auto;
 }
 
-.blog__title__slogan {
+.blog__title-slogan {
     margin-bottom: 92px;
 }
 
@@ -421,8 +424,6 @@ ul {
     top: -90px;
 }
 
-
-
 .carousel-indicators li {
     width: 8px;
     height: 8px;
@@ -474,10 +475,8 @@ ul {
     margin-bottom: 31px;
 }
 
-.testimonials__title__slogan {
+.testimonials__title-slogan {
     font-weight: 500;
-    font-size: 36px;
-    line-height: 45px;
     margin-bottom: 14px;
 }
 
@@ -816,8 +815,33 @@ ul {
         margin-bottom: -140px;
     }
 
-    .carousel-control-prev__planning-img {
+    .carousel-control-next__planning-img {
         top: 110px;
+    }
+
+    .manage__inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .manage__content {
+        margin-left: 0;
+    }
+
+    .manage__title {
+        padding-top: 80px;
+    }
+
+    .manage__text {
+        max-width: 500px;
+        margin: 0 auto 47px;
+    }
+
+    .manage__images {
+        padding-top: 0px;
+        margin-top: -130px;
+        margin-left: -150px;
     }
 
     .testimonials-wrapper {
@@ -842,11 +866,21 @@ ul {
         padding-right: 4%;
     }
 
+    .manage__text {
+        max-width: 500px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .manage__images {
+        margin: -130px auto 0;
+    }
+
     .blog {
         padding-top: 60px;
     }
 
-    .blog__title__slogan {
+    .blog__title-slogan {
         margin-bottom: 50px;
     }
 
@@ -866,7 +900,7 @@ ul {
         padding-left: 50px;
     }
 
-    .testimonials__title__slogan {
+    .slogan {
         font-size: 35px;
     }
 
@@ -885,7 +919,7 @@ ul {
         margin-bottom: -120px;
     }
 
-    .carousel-control-prev__planning-img {
+    .carousel-control-next__planning-img {
         top: 100px;
     }
 
@@ -929,7 +963,7 @@ ul {
         margin-bottom: -80px;
     }
 
-    .carousel-control-prev__planning-img {
+    .carousel-control-next__planning-img {
         top: 50px;
     }
 
@@ -986,6 +1020,8 @@ ul {
 
     .testimonials__text {
         margin: 0 auto;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .help__card-body {
@@ -1026,13 +1062,17 @@ ul {
 
 @media (max-width:767px) {
 
-    .carousel-control-prev__planning-img {
+    .carousel-control-next__planning-img {
         top: 40px;
         width: 110px;
     }
 
     .planning__content {
         margin-bottom: -50px;
+    }
+
+    .manage__img {
+        max-width: 80%;
     }
 
     .carousel-inner__blog {
@@ -1050,7 +1090,7 @@ ul {
         font-size: 35px;
     }
 
-    .planning__text {
+    .text {
         font-size: 14px;
     }
 
@@ -1093,7 +1133,15 @@ ul {
 
 @media (max-width:576px) {
 
-    .planning__text {
+    .manage__title {
+        padding-top: 60px;
+    }
+
+    .manage__images {
+        margin-top: -150px;
+    }
+
+    .text {
         font-size: 12px;
     }
 
@@ -1132,7 +1180,7 @@ ul {
         font-size: 25px;
     }
 
-    .blog__title__slogan {
+    .slogan {
         margin-bottom: 30px;
     }
 
@@ -1156,7 +1204,7 @@ ul {
         margin-bottom: -20px;
     }
 
-    .carousel-control-prev__planning-img {
+    .carousel-control-next__planning-img {
         top: 5px;
     }
 
@@ -1263,7 +1311,7 @@ ul {
         margin-bottom: 10px;
     }
 
-    .testimonials__title__slogan {
+    .slogan {
         font-size: 24px;
     }
 
@@ -1294,7 +1342,7 @@ ul {
         margin-bottom: 10px;
     }
 
-    .carousel-control-prev__planning-img {
+    .carousel-control-next__planning-img {
         top: -25px;
     }
 
@@ -1315,6 +1363,18 @@ ul {
 
 @media (max-width:319px) {
 
+    .social__link:not(:last-child) {
+        margin-right: 0px;
+    }
+
+    .social__link:last-child {
+        margin-right: 4px;
+    }
+
+    .social__link {
+        padding: 9px;
+    }
+
     .carousel-indicators__blog {
         margin-right: 10%;
         margin-left: 10%;
@@ -1324,5 +1384,14 @@ ul {
         width: 250px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .carousel-indicators li:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .carousel-indicators li {
+        width: 7px;
+        height: 7px;
     }
 }
