@@ -8,7 +8,7 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
     margin: 0;
 }
 
@@ -312,13 +312,68 @@ ul {
     margin-bottom: 25px;
 }
 
-.features__card-text{
+.features__card-text {
     font-family: Open Sans;
-font-weight: 600;
-font-size: 11px;
-line-height: 19px;
-color: #ADB3CB;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 19px;
+    color: #ADB3CB;
 }
+
+.features__button {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    border-radius: 2px;
+    padding: 12px 20px 12px 20px;
+}
+
+.feature__button--further {
+    padding: 12px 20px 12px 20px;
+    background-color: #FFD7D7;
+    color: #D43F3F;
+}
+
+.feature__button--start {
+    padding: 12px 19px 12px 19px;
+    background-color: #D2E1FF;
+    color: #3A79FF;
+}
+
+.features__buttons-text {
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 19px;
+    color: #ADB3CB;
+    position: relative;
+}
+
+.features__buttons-textblock{
+    overflow: hidden;
+    width: 23%;
+}
+
+.features__buttons-text::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 15px;
+    border-bottom: 1px solid #DAE4FE;
+    top: 50%;
+    left: 31px;
+}
+
+.features__buttons-text::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 15px;
+    border-bottom: 1px solid #DAE4FE;
+    top: 50%;
+    right: 31px;
+}
+
 
 
 /* ! statistics */
@@ -1400,6 +1455,30 @@ color: #ADB3CB;
         justify-content: center !important;
     }
 
+    .features__buttons-textblock {
+              width: 16%;
+    }
+
+    .features__buttons-text::after{
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 15px;
+        border-bottom: 1px solid #DAE4FE;
+        top: 50%;
+        right: 20px;
+    }
+
+    .features__buttons-text::before{
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 15px;
+        border-bottom: 1px solid #DAE4FE;
+        top: 50%;
+        left: 20px;
+    }
+
     .testimonials__slaider-content {
         width: 300px;
         padding-left: 15px;
@@ -1408,6 +1487,17 @@ color: #ADB3CB;
 
     .testimonials__slaider-text {
         font-size: 13px;
+    }
+}
+
+@media (max-width:340px){
+    .features__buttons-text::after,
+    .features__buttons-text::before{
+        display: none;
+    }
+
+    .features__buttons-textblock {
+        width: 10%;
     }
 }
 
