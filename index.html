@@ -29,9 +29,9 @@
                         <div class="col-12 p-0 m-0 container__inner d-flex justify-content-between align-items-center">
                             <nav class="navbar navbar-expand-lg navbar-light p-0 m-0">
                                 <img class='logo' src="./img/logo.svg" alt="logo">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                <button class="navbar-toggler " type="button" data-toggle="collapse"
                                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                    aria-expanded="false" aria-label="Переключатель навигации">
+                                    aria-expanded="false" aria-label="toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
 
@@ -781,55 +781,57 @@
         <div class="container-fluid p-0 m-0">
             <div class="container__wrap">
                 <div class="container__inner">
-                    <div class="row d-flex justify-content-between align-items-center p-0 m-0">
-                        <div class="col-12 p-0 m-0 container__inner d-flex justify-content-between align-items-center">
-                            <nav class="navbar navbar-expand-lg navbar-light p-0 m-0">
-                                <img class='logo' src="./img/logo.svg" alt="logo">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    <div class="row d-flex flex-wrap flex-column flex-sm-row justify-content-between align-items-center p-0 m-0">
+                        <div class="col-12 flex-wrap flex-column flex-sm-row p-0 m-0 container__inner d-flex justify-content-lg-between align-items-center">
+                            <nav class="navbar__footer col-12 col-lg-7 p-0 m-0 d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-between">
+                                <img class='logo logo__footer d-flex align-items-center' src="./img/logo.svg" alt="logo">
+                                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse"
                                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                     aria-expanded="false" aria-label="Переключатель навигации">
                                     <span class="navbar-toggler-icon"></span>
-                                </button>
+                                </button> -->
 
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
 
-                                    <ul class="navbar-nav mr-auto">
-                                        <li class="nav-item">
+                                    <ul class="navbar__footer-list d-flex flex-column flex-sm-row align-items-center m-0 p-0 mr-lg-auto justify-content-around justify-content-lg-start"> 
+                                        <li class="nav-item nav-item__footer">
                                             <a class="nav-link" href="#">Home</span></a>
                                         </li>
-                                        <li class="nav-item">
+                                        <li class="nav-item nav-item__footer">
                                             <a class="nav-link" href="#">Blog</a>
                                         </li>
-                                        <li class="nav-item">
+                                        <li class="nav-item nav-item__footer">
                                             <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Features</a>
                                         </li>
-                                        <li class="nav-item">
+                                        <li class="nav-item nav-item__footer">
                                             <a class="nav-link" href="#">Pricing</a>
                                         </li>
-                                        <li class="nav-item active">
+                                        <li class="nav-item nav-item__footer active">
                                             <a class="nav-link" href="#">Documentation <span
                                                     class="sr-only">(текущая)</span></a>
                                         </li>
                                     </ul>
-                                </div>
+                                <!-- </div> -->
                             </nav>
 
-                            <div class="social__links d-flex justify-content-between p-0 m-0 ml-auto">
-                                <a class="social__link" href="#">
+                            <div class="social__links col-12 col-lg-5 d-flex flex-column flex-sm-row justify-content-center justify-content-lg-between align-items-center p-0 m-auto ml-lg-0">
+                                <a class="social__link social__link-footer" href="#">
                                     <img class="social__img" src="/img/social/facebook.svg" alt="facebook">
                                 </a>
-                                <a class="social__link" href="#">
+                                <a class="social__link social__link-footer" href="#">
                                     <img class="social__img" src="/img/social/telegram.svg" alt="telegram">
                                 </a>
-                                <a class="social__link" href="#">
+                                <a class="social__link social__link-footer" href="#">
                                     <img class="social__img" src="/img/social/twitter.svg" alt="twitter">
                                 </a>
-                                <a class="social__link" href="#">
+                                <a class="social__link social__link-footer" href="#">
                                     <img class="social__img" src="/img/social/medium.svg" alt="medium">
                                 </a>
+
+                                  <button class='button--started btn'>Get started</button>
                             </div>
 
-                            <button class='button--started btn'>Get started</button>
+                          
                         </div>
                     </div>
                 </div>

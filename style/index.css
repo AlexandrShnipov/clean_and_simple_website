@@ -104,6 +104,10 @@ ul {
     padding-right: 8%;
 }
 
+input {
+    cursor: pointer;
+}
+
 /* ! header and top footer*/
 
 .header {
@@ -130,6 +134,9 @@ ul {
     text-shadow: 0px 0px 5px #E6E6E6;
     padding-bottom: 5px;
     padding-top: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+
     border-bottom: .5px solid transparent;
     transition: all .5s;
 }
@@ -152,6 +159,10 @@ ul {
     margin-right: 34px;
 }
 
+.navbar-toggler {
+    border-color: #3A79FF !important;
+}
+
 .button--started {
     width: 113px;
     height: 43px;
@@ -170,6 +181,22 @@ ul {
     background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
     border: 1px solid #5F82FF;
     border-bottom: none;
+    background-image: url('../img/planning/bg/left/top/Ellipse.svg'),
+        url('../img/planning/bg/left/md/Ellipse.svg'),
+        url('../img/planning/bg/left/bottom/sm.svg'),
+           url('../img/planning/bg/left/bottom/big.svg'),
+        url('../img/planning/bg/left/bottom/md.svg'),
+        url('../img/planning/bg/left/bottom/smA.svg')
+     ;
+    background-position: left 201px top 55px,
+        left -1px top 122px,
+        left 245px bottom 125px,
+        left 198px bottom 96px,
+        left 232px bottom 96px,
+        left 192px bottom 109px
+        
+        ;
+    background-repeat: no-repeat;
 }
 
 .planning__content {
@@ -209,6 +236,8 @@ ul {
     left: 50%;
     transform: translate(-50%);
 }
+
+
 
 /* ! brands */
 
@@ -1049,7 +1078,7 @@ ul {
     }
 }
 
-@media (max-width:992px) {
+@media (max-width:991px) {
 
     .navbar {
         position: absolute;
@@ -1063,7 +1092,7 @@ ul {
         -ms-flex-direction: column;
         flex-direction: column;
         padding-left: 0;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
         margin-bottom: 0;
         list-style: none;
         background-color: #D2E1FF;
@@ -1183,8 +1212,23 @@ ul {
         padding-bottom: 50px;
     }
 
+    .navbar__footer {
+        margin-bottom: 10px !important;
+    }
+
     .footer__copiright {
         margin-left: 78px;
+    }
+
+    .logo__footer {
+        margin-right: 30px;
+    }
+
+}
+
+@media (min-width:992px) {
+    .nav-item__footer.nav-item:not(:last-child) {
+        margin-right: 10px;
     }
 }
 
@@ -1259,7 +1303,7 @@ ul {
     }
 }
 
-@media (max-width:576px) {
+@media (max-width:575px) {
 
     .manage__title {
         padding-top: 60px;
@@ -1314,6 +1358,20 @@ ul {
 
     .blog__slaider-text {
         font-size: 12px;
+    }
+
+    .footer {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .logo__footer {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .social__link.social__link-footer {
+        margin-right: 0 !important;
     }
 }
 
