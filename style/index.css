@@ -326,6 +326,30 @@ input {
 
 /* !features */
 
+.features {
+    background-image: url('../img/features/bg/right/big.svg'),
+        url('../img/features/bg/right/md.svg'),
+        url('../img/features/bg/right/sm-big.svg'),
+        url('../img/features/bg/right/sm-a.svg'),
+        url('../img/features/bg/left/top/big.svg'),
+        url('../img/features/bg/left/top/sm.svg'),
+        url('../img/features/bg/left/bottom/md.svg'),
+        url('../img/features/bg/left/bottom/sm-A.svg'),
+        url('../img/features/bg/left/bottom/big.svg'),
+        url('../img/features/bg/left/bottom/sm-big.svg');
+    background-position: right 90px top 176px,
+        right 63px top 198px,
+        right 143px top 178px,
+        right 63px top 163px,
+        left 195px top 106px,
+        left 229px top 107px,
+        left 85px bottom 163px,
+        left 168px bottom 162px,
+        left 112px bottom 153px,
+        left 114px bottom 182px;
+    background-repeat: no-repeat;
+}
+
 .features__inner {
     padding-top: 171px;
     padding-bottom: 171px;
@@ -337,6 +361,11 @@ input {
 
 .features__cards {
     margin-bottom: 120px;
+}
+
+.features__card {
+    padding-left: 28px;
+    padding-right: 28px;
 }
 
 .features__card-imgblock {
@@ -1294,9 +1323,6 @@ input {
     .footer__copiright {
         margin-left: 0;
     }
-}
-
-@media (max-width:767px) {
 
     .manage__title {
         padding-top: 50px;
@@ -1304,6 +1330,30 @@ input {
 
     .manage__links {
         margin-bottom: 179px;
+    }
+
+    .features {
+        background-image: url('../img/features/bg/right/big.svg'),
+            url('../img/features/bg/right/md.svg'),
+            url('../img/features/bg/right/sm-big.svg'),
+            url('../img/features/bg/right/sm-a.svg'),
+            url('../img/features/bg/left/top/big.svg'),
+            url('../img/features/bg/left/top/sm.svg'),
+            url('../img/features/bg/left/bottom/md.svg'),
+            url('../img/features/bg/left/bottom/sm-A.svg'),
+            url('../img/features/bg/left/bottom/big.svg'),
+            url('../img/features/bg/left/bottom/sm-big.svg');
+        background-position: right 30px top 86px,
+            right 3px top 108px,
+            right 83px top 88px,
+            right 3px top 73px,
+            left 55px top -20px,
+            left 89px top -19px,
+            left -15px bottom 163px,
+            left 68px bottom 162px,
+            left 12px bottom 153px,
+            left 14px bottom 182px;
+        background-repeat: no-repeat;
     }
 
     .features__inner {
